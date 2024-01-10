@@ -1,18 +1,39 @@
 .footer-container{
-  height: 10rem;
-  background-color: grey;
+  background-color: var(--secondary-color);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 16px;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  padding:2rem 0;
+  flex-wrap: wrap;
 }
 .footer{
   max-width: 960px;
-  background-color: red;
-  height: 100%;
+  padding:2rem clamp(10px, 4vw, 4rem);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  color:var(--primary-color);
+  font-weight:600;
+  gap:10px;
+}
+.footer>span{
+  text-align:center;
+}
+.phone-image-icon{
+  height:16px;
+  width:16px;
+  margin-left:5px;
+  filter: invert(40%) sepia(87%) saturate(7065%) hue-rotate(40deg) brightness(94%) contrast(101%);
+}
+.location-icon{
+  width:16px;
+  margin-left:5px;
+  filter: invert(40%) sepia(87%) saturate(7065%) hue-rotate(40deg) brightness(94%) contrast(101%);
 }

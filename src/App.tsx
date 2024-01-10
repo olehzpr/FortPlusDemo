@@ -5,9 +5,6 @@ import OccupationalHealthPage from './pages/OccupationalHealthPage'
 import WorkerTrainingPage from './pages/WorkerTrainingPage'
 import WorkshopPage from './pages/WorkshopPage'
 import CarDiagnosticsPage from './pages/CarDiagnosticsPage'
-import ResourcesPage from './pages/ResourcesPage'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -22,9 +19,6 @@ function App() {
           <Route path='worker-training' element={ <WorkerTrainingPage/> }/>
           <Route path='workshop' element={ <WorkshopPage/> }/>
           <Route path='car-diagnostics' element={ <CarDiagnosticsPage/> }/>
-          <Route path='resources' element={ <ResourcesPage/> }/>
-          <Route path='login' element={ <LoginPage/> }/>
-          <Route path='register' element={ <RegisterPage/> }/>
         </Routes>
       </div>
       <Footer/>

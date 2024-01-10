@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 :root{
   --navbar-height:5rem;
   --footer-height:10rem;
-  --primary-color:red;
+  --primary-color:brown;
   --secondary-color:#ecf0f3;
 }
 

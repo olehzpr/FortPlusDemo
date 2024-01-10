@@ -5,9 +5,11 @@ export default function Card(props:any) {
   return (
     <div className='card-container'>
       <div className='card'>
-        <div className='text'>{props.text}</div>
-        <div className='divider'>------</div>
-        <div className='description'>{props.description}</div>
+        <img className='image' src={props.img}/>
+        <div className='content'>
+          <div className='text'>{props.text}</div>
+          <div className='description'>{props.description}</div>
+        </div>
         <Link to={props.link} className='link'></Link>
       </div>
     </div>

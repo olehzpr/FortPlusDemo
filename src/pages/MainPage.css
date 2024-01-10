@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction:column;
   gap:calc(15px + 2vw);
   max-width: 960px;
   height: 100%;

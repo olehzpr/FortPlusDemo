@@ -1,14 +1,15 @@
 .card-container{
-  width: calc(15rem + 5vw);
-  height: calc(10rem + 5vw);
+  width:clamp(200px, 75vw, 960px);
+  height: calc(20rem + 5vw);
   background-color: #F5F5F5;
   border: 1px solid #E3E3E3;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin:calc(10px + 1vw);
+  flex-grow:1;
 }
 
 .card{
@@ -22,10 +23,38 @@
 }
 
 .link{
+  border-radius:20px;
   position: absolute;
   height: 100%;
   width: 100%;
   top:0;
   left:0;
   z-index: 2;
+}
+.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:80%;
+  transform:translate(-50%, -50%);
+  color:white;
+}
+.text{
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size:calc(1rem + 3vw);
+  width:100%;
+  text-align:center;
+}
+.description{
+  font-size:large;
+  text-align:center;
+}
+
+.image{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+  filter:brightness(50%);
+  border-radius:20px;
 }
