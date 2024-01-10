@@ -9,25 +9,25 @@ export default function MainPage() {
           <Card 
             text="НАВЧАННЯ З ПИТАНЬ ОХОРОНИ ПРАЦІ" 
             link="/occupational-health" 
-            img='./OccupationalHealth.jpg'
+            img='./OccupationalHealth_50.webp'
             alt='НАВЧАННЯ З ПИТАНЬ ОХОРОНИ ПРАЦІ'
             description="Докладніше / онлайн навчання"/>
           <Card 
             text="НАВЧАННЯ ЗА ПРОФЕСІЯМИ" 
             link="/worker-training" 
-            img='./WorkerTraining.jpg'
+            img='./WorkerTraining_50_1_50.webp'
             alt='НАВЧАННЯ ЗА ПРОФЕСІЯМИ'
             description="Докладніше / онлайн навчання"/>
           <Card 
             text="МАЙСТЕРНЯ" 
             link="/workshop" 
-            img='./Workshop.jpg'
+            img='./Workshop_2_50.webp'
             alt='МАЙСТЕРНЯ'
             description="Послуги"/>
           <Card 
             text="ДІАГНОСТИКА АВТОМОБІЛІВ" 
             link="/car-diagnostics" 
-            img='./CarDiagnostics.jpg'
+            img='./CarDiagnostics_1_1920x1280.webp'
             alt='ДІАГНОСТИКА АВТОМОБІЛІВ'
             description="Послуги"/>
         </div>
