@@ -19,6 +19,7 @@ function App() {
           <Route path='worker-training' element={ <WorkerTrainingPage/> }/>
           <Route path='workshop' element={ <WorkshopPage/> }/>
           <Route path='car-diagnostics' element={ <CarDiagnosticsPage/> }/>
+          <Route path='https://olegzapara.github.io/FortPlusDemo/test' element={ <MainPage/> }/>
         </Routes>
       </div>
       <Footer/>

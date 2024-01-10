@@ -5,7 +5,7 @@ export default function Card(props:any) {
   return (
     <div className='card-container'>
       <div className='card'>
-        <img className='image' src={props.img}/>
+        <img className='image' src={props.img} alt={props.alt}/>
         <div className='content'>
           <div className='text'>{props.text}</div>
           <div className='description'>{props.description}</div>
