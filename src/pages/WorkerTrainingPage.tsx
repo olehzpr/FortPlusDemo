@@ -9,11 +9,11 @@ export default function WorkerTrainingPage() {
     <div className='WorkerTrainingPage'>
       <div className='page-content'>
         <div className='header'>
-        Ліцензія Міносвіти АГ № 582693
+        Ліцензія Міносвіти <span style={{whiteSpace:'nowrap'}}>АГ № 582693</span>
         </div>
         <ul className='responsive-table'>
           <li className='table-header'>
-            <div className='col col-1'>Номер</div>
+            <div className='col col-1'>Позиція</div>
             <div className='col col-2'>Найменування навчання</div>
           </li>    
           {license.map((x, i) => (

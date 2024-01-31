@@ -12,6 +12,7 @@
   flex-direction: column;
   width: 960px;
   margin:30px 0;
+  margin-top: 5rem;
 }
 .responsive-table{
   margin:15px;
@@ -52,10 +53,9 @@
   .responsive-table .col {
     flex-basis: 100%;
   }
-  .responsive-table .col {
-    display: flex;
-    padding: 10px 0;
-    justify-content: flex-start;
+  
+  .responsive-table .col-1 {
+      display: none !important;
   }
   .responsive-table .col:before {
     color: #6C7A89;
@@ -65,9 +65,9 @@
   }
 }
 
-.header{
-  font-size: 24px; 
-  margin: 30px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
+/* .header{ */
+/*   font-size: 24px;  */
+/*   margin: 30px 0; */
+/*   text-align: center; */
+/*   text-transform: uppercase; */
+/* } */

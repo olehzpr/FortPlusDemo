@@ -12,7 +12,7 @@ export default function WorkshopPage() {
         </div>
         <ul className='responsive-table'>
           <li className='table-header'>
-            <div className='col col-1'>Номер</div>
+            <div className='col col-1'>Позиція</div>
             <div className='col col-2'>Найменування навчання</div>
           </li>    
           {rows.map((x, i) => (

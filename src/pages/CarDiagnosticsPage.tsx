@@ -3,7 +3,6 @@ import "./CarDiagnosticsPage.css"
 
 export default function CarDiagnosticsPage() {
   const rows = data.rows;
-
   return (
     <div className='CarDiagnosticsPage'>
       <div className='page-content'>
@@ -12,7 +11,7 @@ export default function CarDiagnosticsPage() {
         </div>
         <ul className='responsive-table'>
           <li className='table-header'>
-            <div className='col col-1'>Номер</div>
+            <div className='col col-1'>Позиція</div>
             <div className='col col-2'>Найменування навчання</div>
           </li>    
           {rows.map((x, i) => (

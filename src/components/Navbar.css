@@ -1,6 +1,6 @@
 .navbar-container{
   height: 5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,6 +11,8 @@
   border-radius: 4px 4px 4px 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
   padding: 8px;
+  position: fixed;
+  z-index: 9;
 }
  
 .navbar{
@@ -22,12 +24,14 @@
   max-width: 960px;
   height: 100%;
   flex-grow: 1;
+  position:relative;
 }
 
 .main-nav{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: clamp(10px, 2vw + 10px, 42px);
   color: brown;
+  text-align: center;
 }
 
 .text-link{
@@ -37,4 +41,23 @@
   text-decoration: none !important;
   width: 100%;
   height: 100%;
+}
+.go-back-link{
+  color:var(--primary-color);
+  text-decoration:none !important;
+  text-transform:uppercase;
+  min-width: 40px;
+  position: absolute;
+  left:15px;
+  z-index: 99;
+}
+.arrow-icon{
+  height:16px;
+  width:16px;
+  margin-right: 5px;
+  filter: invert(40%) sepia(87%) saturate(7065%) hue-rotate(40deg) brightness(94%) contrast(101%);
+}
+
+@media (max-width: 767px) {
+
 }
