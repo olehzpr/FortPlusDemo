@@ -38,3 +38,7 @@
   margin-left:5px;
   filter: invert(40%) sepia(87%) saturate(7065%) hue-rotate(40deg) brightness(94%) contrast(101%);
 }
+
+.phone-description{
+  max-width: 250px;
+}

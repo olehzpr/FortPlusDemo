@@ -31,7 +31,7 @@ export default function Navbar() {
       }
       <div className='navbar'>
         <Link className='text-link' to="/" aria-label='Головна сторінка' title='Головна сторінка'>
-          <div className='main-nav'>ТОВ "НАУКОВО-ЕКСПЕРТНИЙ ЦЕНТР <span style={{whiteSpace:'nowrap'}}>"ФОРТ ПЛЮС"</span></div>
+          <div className='main-nav'>ТОВ "ФОРТ"</div>
         </Link>
       </div>
     </div>
