@@ -1,5 +1,6 @@
 // import React from 'react'
 import data from '../assets/WorkerTrainingData.json'
+import ScrollArrow from '../components/ScrollArrow';
 import './WorkerTrainingPage.css'
 
 export default function WorkerTrainingPage() {
@@ -8,6 +9,7 @@ export default function WorkerTrainingPage() {
   return (
     <div className='WorkerTrainingPage'>
       <div className='page-content'>
+        <ScrollArrow></ScrollArrow>
         <div className='header'>
         Ліцензія Міносвіти <span style={{whiteSpace:'nowrap'}}>АГ № 582693</span>
         </div>

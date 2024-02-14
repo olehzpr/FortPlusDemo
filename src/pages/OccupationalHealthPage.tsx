@@ -1,5 +1,6 @@
 // import React from 'react'
 import data from '../assets/OccupationalHealthData.json'
+import ScrollArrow from '../components/ScrollArrow';
 import "./OccupationalHealthPage.css"
 
 export default function OccupationalHealthPage() {
@@ -21,6 +22,7 @@ export default function OccupationalHealthPage() {
 
   return (
     <div className='OccupationalHealthPage'>
+      <ScrollArrow></ScrollArrow>
       <div className='page-content'>
         <div className='header'>
           Навчання з питань охорони праці

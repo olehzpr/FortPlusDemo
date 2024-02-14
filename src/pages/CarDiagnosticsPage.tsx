@@ -1,10 +1,12 @@
 import data from '../assets/CarDiagnosticsData.json'
+import ScrollArrow from '../components/ScrollArrow';
 import "./CarDiagnosticsPage.css"
 
 export default function CarDiagnosticsPage() {
   const rows = data.rows;
   return (
     <div className='CarDiagnosticsPage'>
+      <ScrollArrow></ScrollArrow>
       <div className='page-content'>
         <div className='header'>
           Діагностика автомобілів

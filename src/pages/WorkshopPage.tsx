@@ -1,4 +1,5 @@
 import data from '../assets/WorkshopData.json'
+import ScrollArrow from '../components/ScrollArrow';
 import "./WorkshopPage.css"
 
 export default function WorkshopPage() {
@@ -6,6 +7,7 @@ export default function WorkshopPage() {
 
   return (
     <div className='WorkshopPage'>
+      <ScrollArrow></ScrollArrow>
       <div className='page-content'>
         <div className='header'>
           Майстерня

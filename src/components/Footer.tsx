@@ -16,7 +16,7 @@ export default function Footer() {
   }
 
   return (
-    <div className='footer-container'>
+    <div className='footer-container' id='footer'>
       <div id='location' className='footer'>
         <span>АДРЕСА<img src='./location.png' className='location-icon' alt='location-icon'/></span>
         <span title='Адреса'>вул.  Київське шосе, 33<br/>м. Полтава, Україна, 36008</span>
