@@ -74,3 +74,7 @@
   color:var(--primary-color);
   white-space: nowrap;
 }
+
+.empty-link{
+  color:red;
+}

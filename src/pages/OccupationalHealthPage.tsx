@@ -5,18 +5,16 @@ import "./OccupationalHealthPage.css"
 
 export default function OccupationalHealthPage() {
   const rows = data.rows;
-  const linkRegPattern = /\([^\/)]*\)\[.*\]/;
+  const linkRegPattern = /\([^[]*\)\[[^(]*\]/gm;
   function splitLinks(s:string) : string[]{
-    let arr:string[] = []
-    let match = s.match(linkRegPattern)
-    if(match == null){
-      arr.push(s)
-      return arr
-    }
+    const matches = [...s.matchAll(linkRegPattern)].map(x => x[0])
+    console.log(matches);
+    let matchIndex = 0
+    const arr: string[] = []
     s.split(linkRegPattern).map(x => {
-      if(x == '') arr.push(match![0]) 
-      else arr.push(x)
-    }) 
+      if(x !== '') arr.push(x)
+      if(matchIndex < matches.length) arr.push(matches[matchIndex++])
+    })
     return arr
   }
 
@@ -40,7 +38,7 @@ export default function OccupationalHealthPage() {
                   linkRegPattern.test(substr) ? (
                         <a key={i.toString() + index.toString()} 
                         title={'Детальніше про ' + substr.match(/(?<=\().*(?=\)\[.*\])/)![0]} 
-                        className='additional-resource-link'
+                        className={`additional-resource-link ${substr.match(/(?<=\)\[).*(?=\])/)![0] == ''? 'empty-link' : ""}`}
                         href={substr.match(/(?<=\)\[).*(?=\])/)![0]}
                         target="_blank">
                         {substr.match(/(?<=\().*(?=\)\[.*\])/)![0]}

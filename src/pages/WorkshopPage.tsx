@@ -15,7 +15,7 @@ export default function WorkshopPage() {
         <ul className='responsive-table'>
           <li className='table-header'>
             <div className='col col-1'>Позиція</div>
-            <div className='col col-2'>Найменування навчання</div>
+            <div className='col col-2'>Найменування послуги</div>
           </li>    
           {rows.map((x, i) => (
             <li key={i} className='table-row'>
