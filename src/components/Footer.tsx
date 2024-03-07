@@ -9,7 +9,7 @@ export default function Footer() {
   const phoneNumbers: PhoneInfo[] = [
     {description:"Діагностику автомобілів", phoneNumber: "38(066)26-66-163"},
     {description:"Навчання з  ОП, професіїй", phoneNumber: "38(050)85-81-006"},
-    {description:"Майстерню", phoneNumber: "38(067)98-00-988"}
+    {description:"Газову майстерню", phoneNumber: "38(067)98-00-988"}
   ]
 
   return (

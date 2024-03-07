@@ -19,10 +19,10 @@ export default function MainPage() {
             alt='НАВЧАННЯ ЗА ПРОФЕСІЯМИ'
             description="Докладніше / онлайн навчання"/>
           <Card 
-            text="МАЙСТЕРНЯ" 
+            text="ГАЗОВА МАЙСТЕРНЯ" 
             link="/workshop" 
             img='./Workshop_2_50.webp'
-            alt='МАЙСТЕРНЯ'
+            alt='ГАЗОВА МАЙСТЕРНЯ'
             description="Послуги"/>
           <Card 
             text="ДІАГНОСТИКА АВТОМОБІЛІВ" 

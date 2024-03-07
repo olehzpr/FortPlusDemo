@@ -10,7 +10,7 @@ export default function WorkshopPage() {
       <ScrollArrow></ScrollArrow>
       <div className='page-content'>
         <div className='header'>
-          Майстерня
+          Газова майстерня
         </div>
         <ul className='responsive-table'>
           <li className='table-header'>
