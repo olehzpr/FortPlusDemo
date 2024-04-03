@@ -27,11 +27,20 @@ export default function Footer() {
       <div id='phone-number' className='footer'>
         <span>Детальніше про:</span>
         <span className='phone-description'></span>
-        <ul>
+        <ul className='phone-list-container'>
           {phoneNumbers.map((phoneNumber) => (
-            <li className='phone-list'>{phoneNumber.description}: <span>{phoneNumber.phoneNumber} <img src='./telephone-call.png' className='phone-image-icon' alt='phone-icon'/></span></li>
+            <li className='phone-list' key={phoneNumber.phoneNumber}><div >{phoneNumber.description}:</div> <span className='phone'>{phoneNumber.phoneNumber} <img src='./telephone-call.png' className='phone-image-icon' alt='phone-icon'/></span></li>
           ))}
         </ul>
+      </div>
+      <div id='phone-number' className='footer'>
+        <span>
+          Співпрацюємо з
+        </span>
+        <span title='Національний університет Полтавська політехніка'>
+          <a className='nupp-link' href='https://nupp.edu.ua/' aria-label='Полтавська політехніка'>https://nupp.edu.ua/</a>
+        </span>
+        <br/>
       </div>
     </div>
   )

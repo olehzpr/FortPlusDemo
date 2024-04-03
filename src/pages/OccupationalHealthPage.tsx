@@ -8,7 +8,6 @@ export default function OccupationalHealthPage() {
   const linkRegPattern = /\([^[]*\)\[[^(]*\]/gm;
   function splitLinks(s:string) : string[]{
     const matches = [...s.matchAll(linkRegPattern)].map(x => x[0])
-    console.log(matches);
     let matchIndex = 0
     const arr: string[] = []
     s.split(linkRegPattern).map(x => {

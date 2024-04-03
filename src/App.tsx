@@ -15,11 +15,10 @@ function App() {
       <div className='main'>
         <Routes>
           <Route path='/' element={ <MainPage/> }/>
-          <Route path='occupational-health' element={ <OccupationalHealthPage/> }/>
-          <Route path='worker-training' element={ <WorkerTrainingPage/> }/>
-          <Route path='workshop' element={ <WorkshopPage/> }/>
-          <Route path='car-diagnostics' element={ <CarDiagnosticsPage/> }/>
-          <Route path='https://olegzapara.github.io/FortPlusDemo/test' element={ <MainPage/> }/>
+          <Route path='/occupational-health' element={ <OccupationalHealthPage/> }/>
+          <Route path='/worker-training' element={ <WorkerTrainingPage/> }/>
+          <Route path='/workshop' element={ <WorkshopPage/> }/>
+          <Route path='/car-diagnostics' element={ <CarDiagnosticsPage/> }/>
         </Routes>
       </div>
       <Footer/>

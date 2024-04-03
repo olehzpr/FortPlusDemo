@@ -14,7 +14,7 @@
 }
 .footer{
   max-width: 960px;
-  padding:2rem clamp(10px, 4vw, 4rem);
+  padding:2rem clamp(10px, 2vw, 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,5 +45,21 @@
 .phone-list{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media screen and (max-width: 400px) {
+  .phone-list{
+    margin-top:5px;
+    justify-content: center;
+  }
+}
+
+.phone{
+  white-space: pre;
+}
+
+.nupp-link{
+  color: var(--primary-color);
 }
