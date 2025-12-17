@@ -1,5 +1,5 @@
-import data from "../assets/WorkshopData.json";
-import ScrollArrow from "../components/ScrollArrow";
+import data from "../../assets/WorkshopData.json";
+import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkshopPage.css";
 
 export default function WorkshopPage() {
