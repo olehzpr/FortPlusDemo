@@ -5,10 +5,10 @@ import "./CarDiagnosticsPage.css";
 export default function CarDiagnosticsPage() {
   const rows = carDiagnosticsData.rows;
   return (
-    <div className="CarDiagnosticsPage">
+    <main className="CarDiagnosticsPage">
       <ScrollArrow></ScrollArrow>
-      <div className="page-content">
-        <div className="header">Діагностика автомобілів</div>
+      <article className="page-content">
+        <h1 className="header">Діагностика автомобілів</h1>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -25,7 +25,7 @@ export default function CarDiagnosticsPage() {
             </li>
           ))}
         </ul>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

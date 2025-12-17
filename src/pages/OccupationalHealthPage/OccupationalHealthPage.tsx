@@ -17,10 +17,10 @@ export default function OccupationalHealthPage() {
   }
 
   return (
-    <div className="OccupationalHealthPage">
+    <main className="OccupationalHealthPage">
       <ScrollArrow></ScrollArrow>
-      <div className="page-content">
-        <div className="header">Навчання з питань охорони праці</div>
+      <article className="page-content">
+        <h1 className="header">Навчання з питань охорони праці</h1>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -58,7 +58,7 @@ export default function OccupationalHealthPage() {
             </li>
           ))}
         </ul>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

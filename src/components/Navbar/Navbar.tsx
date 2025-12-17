@@ -24,16 +24,16 @@ export default function Navbar() {
     }
   }
   return (
-    <div className="navbar-container">
-      {pathname != '/' ? 
-        <Link to='/' className='go-back-link' aria-label='Повернутись на головну сторінку' title='Повернутись на головну сторінку'><img className='arrow-icon' src='arrow.webp'/><span>{goBackLinkText}</span></Link>
+    <header className="navbar-container">
+      {pathname != '/' ?
+        <Link to='/' className='go-back-link' aria-label='Повернутись на головну сторінку' title='Повернутись на головну сторінку'><img className='arrow-icon' src='arrow.webp' alt='Стрілка назад'/><span>{goBackLinkText}</span></Link>
         : <></>
       }
-      <div className='navbar'>
+      <nav className='navbar' aria-label='Головна навігація'>
         <Link className='text-link' to="/" aria-label='Головна сторінка' title='Головна сторінка'>
           <div className='main-nav'>ТОВ "ФОРТ"</div>
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }

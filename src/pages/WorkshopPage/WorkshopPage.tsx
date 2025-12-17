@@ -8,12 +8,12 @@ export default function WorkshopPage() {
   const testing = workshopData.testing;
   const repair = workshopData.repair;
   return (
-    <div className="WorkshopPage">
+    <main className="WorkshopPage">
       <ScrollArrow></ScrollArrow>
-      <div className="page-content">
-        <div className="header">
+      <article className="page-content">
+        <h1 className="header">
           Встановлення газобалонного обладнання на автомобілі
-        </div>
+        </h1>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -30,9 +30,9 @@ export default function WorkshopPage() {
             </li>
           ))}
         </ul>
-        <div className="header">
+        <h2 className="header">
           Технічне обслуговування, ремонт газобалонного обладнання
-        </div>
+        </h2>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -49,9 +49,9 @@ export default function WorkshopPage() {
             </li>
           ))}
         </ul>
-        <div className="header">
+        <h2 className="header">
           Випробування газових балонів, наливних рукавів, клапанів
-        </div>
+        </h2>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -68,7 +68,7 @@ export default function WorkshopPage() {
             </li>
           ))}
         </ul>
-        <div className="header">ТО та Ремонт автомобілів</div>
+        <h2 className="header">ТО та Ремонт автомобілів</h2>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -85,7 +85,7 @@ export default function WorkshopPage() {
             </li>
           ))}
         </ul>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

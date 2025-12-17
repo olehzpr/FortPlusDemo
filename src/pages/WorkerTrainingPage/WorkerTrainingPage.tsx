@@ -6,13 +6,13 @@ export default function WorkerTrainingPage() {
   const license = workerTrainingData.license;
   const courses = workerTrainingData.courses;
   return (
-    <div className="WorkerTrainingPage">
-      <div className="page-content">
+    <main className="WorkerTrainingPage">
+      <article className="page-content">
         <ScrollArrow></ScrollArrow>
-        <div className="header">
+        <h1 className="header">
           Ліцензія Міносвіти{" "}
           <span style={{ whiteSpace: "nowrap" }}>АГ № 582693</span>
-        </div>
+        </h1>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>
@@ -30,9 +30,9 @@ export default function WorkerTrainingPage() {
           ))}
         </ul>
 
-        <div className="header">
+        <h2 className="header">
           Курси цільового призначення для навчання робітників за професіями
-        </div>
+        </h2>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Номер</div>
@@ -49,7 +49,7 @@ export default function WorkerTrainingPage() {
             </li>
           ))}
         </ul>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

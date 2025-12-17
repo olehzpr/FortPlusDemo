@@ -13,15 +13,15 @@ export default function Footer() {
   ]
 
   return (
-    <div className='footer-container' id='footer'>
+    <footer className='footer-container' id='footer'>
       <div id='location' className='footer'>
-        <span>АДРЕСА<img src='./location.webp' className='location-icon' alt='location-icon'/></span>
-        <span title='Адреса'>вул.  Київське шосе, 33<br/>м. Полтава, Україна, 36008</span>
+        <span>АДРЕСА<img src='./location.webp' className='location-icon' alt='Іконка місцезнаходження'/></span>
+        <address title='Адреса'>вул.  Київське шосе, 33<br/>м. Полтава, Україна, 36008</address>
         <br/>
       </div>
       <div id='phone-number' className='footer'>
-        <span>ТЕЛЕФОН <img src='./telephone-call.webp' className='phone-image-icon' alt='phone-icon'/></span>
-        <span title='Номер телефону'>(0532) 63-30-77<br/>38(050) 85-81-006</span>
+        <span>ТЕЛЕФОН <img src='./telephone-call.webp' className='phone-image-icon' alt='Іконка телефону'/></span>
+        <span title='Номер телефону'><a href="tel:+380532633077">(0532) 63-30-77</a><br/><a href="tel:+380508581006">38(050) 85-81-006</a></span>
         <br/>
       </div>
       <div id='phone-number' className='footer'>
@@ -29,7 +29,7 @@ export default function Footer() {
         <span className='phone-description'></span>
         <ul className='phone-list-container'>
           {phoneNumbers.map((phoneNumber) => (
-            <li className='phone-list' key={phoneNumber.phoneNumber}><div >{phoneNumber.description}:</div> <span className='phone'>{phoneNumber.phoneNumber} <img src='./telephone-call.webp' className='phone-image-icon' alt='phone-icon'/></span></li>
+            <li className='phone-list' key={phoneNumber.phoneNumber}><div >{phoneNumber.description}:</div> <span className='phone'><a href={`tel:${phoneNumber.phoneNumber}`}>{phoneNumber.phoneNumber}</a> <img src='./telephone-call.webp' className='phone-image-icon' alt='Іконка телефону'/></span></li>
           ))}
         </ul>
       </div>
@@ -38,10 +38,10 @@ export default function Footer() {
           Співпрацюємо з
         </span>
         <span title='Національний університет Полтавська політехніка'>
-          <a className='nupp-link' href='https://nupp.edu.ua/' aria-label='Полтавська політехніка'>https://nupp.edu.ua/</a>
+          <a className='nupp-link' href='https://nupp.edu.ua/' aria-label='Полтавська політехніка' rel="noopener noreferrer" target="_blank">https://nupp.edu.ua/</a>
         </span>
         <br/>
       </div>
-    </div>
+    </footer>
   )
 }
