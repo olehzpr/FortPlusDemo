@@ -1,12 +1,12 @@
-import data from "../../assets/WorkshopData.json";
+import { workshopData } from "../../assets/WorkshopData";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkshopPage.css";
 
 export default function WorkshopPage() {
-  const equipment = data.equipment;
-  const service = data.service;
-  const testing = data.testing;
-  const repair = data.repair;
+  const equipment = workshopData.equipment;
+  const service = workshopData.service;
+  const testing = workshopData.testing;
+  const repair = workshopData.repair;
   return (
     <div className="WorkshopPage">
       <ScrollArrow></ScrollArrow>

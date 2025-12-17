@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(for img in *.png)",
+      "Bash(do ffmpeg:*)",
+      "Bash(done)"
     ]
   }
 }

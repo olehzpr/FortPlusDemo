@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <div className="navbar-container">
       {pathname != '/' ? 
-        <Link to='/' className='go-back-link' aria-label='Повернутись на головну сторінку' title='Повернутись на головну сторінку'><img className='arrow-icon' src='arrow.png'/><span>{goBackLinkText}</span></Link>
+        <Link to='/' className='go-back-link' aria-label='Повернутись на головну сторінку' title='Повернутись на головну сторінку'><img className='arrow-icon' src='arrow.webp'/><span>{goBackLinkText}</span></Link>
         : <></>
       }
       <div className='navbar'>

@@ -1,9 +1,9 @@
-import data from "../../assets/OccupationalHealthData.json";
+import { occupationalHealthData } from "../../assets/OccupationalHealthData";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./OccupationalHealthPage.css";
 
 export default function OccupationalHealthPage() {
-  const rows = data.rows;
+  const rows = occupationalHealthData.rows;
   const linkRegPattern = /\([^[]*\)\[[^(]*\]/gm;
   function splitLinks(s: string): string[] {
     const matches = [...s.matchAll(linkRegPattern)].map((x) => x[0]);

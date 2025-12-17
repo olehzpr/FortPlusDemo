@@ -1,9 +1,9 @@
-import data from "../../assets/CarDiagnosticsData.json";
+import { carDiagnosticsData } from "../../assets/CarDiagnosticsData";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./CarDiagnosticsPage.css";
 
 export default function CarDiagnosticsPage() {
-  const rows = data.rows;
+  const rows = carDiagnosticsData.rows;
   return (
     <div className="CarDiagnosticsPage">
       <ScrollArrow></ScrollArrow>

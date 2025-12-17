@@ -1,11 +1,10 @@
-// import React from 'react'
-import data from "../../assets/WorkerTrainingData.json";
+import { workerTrainingData } from "../../assets/WorkerTrainingData";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkerTrainingPage.css";
 
 export default function WorkerTrainingPage() {
-  const license = data.license;
-  const courses = data.courses;
+  const license = workerTrainingData.license;
+  const courses = workerTrainingData.courses;
   return (
     <div className="WorkerTrainingPage">
       <div className="page-content">
