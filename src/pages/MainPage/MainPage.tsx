@@ -4,10 +4,23 @@ import "./MainPage.css";
 export default function MainPage() {
   return (
     <main>
-      <h1 style={{ position: 'absolute', left: '-10000px', top: 'auto', width: '1px', height: '1px', overflow: 'hidden' }}>
-        ТОВ Форт Плюс - Навчання з охорони праці та професіям, газова майстерня, діагностика автомобілів у Полтаві
+      <h1
+        style={{
+          position: "absolute",
+          left: "-10000px",
+          top: "auto",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+        }}
+      >
+        ТОВ Форт Плюс - Навчання з охорони праці та професіям, газова майстерня,
+        діагностика автомобілів у Полтаві
       </h1>
-      <section className="card-layout-container" aria-label="Послуги та напрями навчання">
+      <section
+        className="card-layout-container"
+        aria-label="Послуги та напрями навчання"
+      >
         <div className="card-layout">
           <Card
             text="НАВЧАННЯ З ПИТАНЬ ОХОРОНИ ПРАЦІ"

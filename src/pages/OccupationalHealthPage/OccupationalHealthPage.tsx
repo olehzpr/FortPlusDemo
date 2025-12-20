@@ -52,7 +52,7 @@ export default function OccupationalHealthPage() {
                     </a>
                   ) : (
                     substr
-                  )
+                  ),
                 )}
               </div>
             </li>

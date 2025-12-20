@@ -1,21 +1,21 @@
-.WorkerTrainingPage{
+.WorkerTrainingPage {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
 
-.page-content{
+.page-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 960px;
-  margin:30px 0;
+  margin: 30px 0;
   margin-top: 5rem;
 }
-.responsive-table{
-  margin:15px;
+.responsive-table {
+  margin: 15px;
   font-size: 14px;
 }
 
@@ -28,7 +28,7 @@
 }
 .responsive-table .table-header {
   background-color: var(--secondary-color);
-  font-size:16px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -53,7 +53,7 @@
     flex-basis: 100%;
   }
   .responsive-table .col:before {
-    color: #6C7A89;
+    color: #6c7a89;
     padding-right: 10px;
     content: attr(data-label);
     text-align: left;
