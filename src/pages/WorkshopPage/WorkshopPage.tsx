@@ -1,4 +1,5 @@
 import { workshopData } from "../../assets/WorkshopData";
+import SEO from "../../components/SEO/SEO";
 import "./WorkshopPage.css";
 
 export default function WorkshopPage() {
@@ -8,6 +9,13 @@ export default function WorkshopPage() {
   const repair = workshopData.repair;
   return (
     <main className="WorkshopPage">
+      <SEO
+        title="Газова майстерня"
+        description="Газова майстерня в Полтаві: встановлення та обслуговування ГБО, випробування газових балонів, технічне обслуговування газобалонного обладнання. Сертифікація ГБО."
+        keywords="ГБО Полтава, встановлення ГБО, газобалонне обладнання, випробування балонів, ремонт ГБО, сертифікація ГБО"
+        canonical="/workshop"
+        ogImage="/Workshop_2_50.webp"
+      />
       <article className="page-content">
         <h1 className="header">
           Встановлення газобалонного обладнання на автомобілі

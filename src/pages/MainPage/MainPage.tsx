@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/SEO/SEO";
 import "./MainPage.css";
 
 export default function MainPage() {
@@ -35,6 +36,12 @@ export default function MainPage() {
 
   return (
     <main className="main-page">
+      <SEO
+        title="Головна"
+        description="ТОВ Форт Плюс у Полтаві: професійне навчання з охорони праці та за професіями, встановлення та обслуговування ГБО, діагностика та ремонт автомобілів. Ліцензія Міносвіти АГ № 582693."
+        keywords="Форт Плюс, навчання охорона праці Полтава, навчання за професіями, ГБО Полтава, газобалонне обладнання, діагностика автомобілів, ремонт авто Полтава"
+        canonical="/"
+      />
       <h1 className="visually-hidden">
         ТОВ Форт Плюс - Навчання з охорони праці та професіям, газова майстерня,
         діагностика автомобілів у Полтаві

@@ -1,4 +1,5 @@
 import { occupationalHealthData } from "../../assets/OccupationalHealthData";
+import SEO from "../../components/SEO/SEO";
 import "./OccupationalHealthPage.css";
 
 export default function OccupationalHealthPage() {
@@ -17,6 +18,12 @@ export default function OccupationalHealthPage() {
 
   return (
     <main className="OccupationalHealthPage">
+      <SEO
+        title="Навчання з охорони праці"
+        description="Професійне навчання з питань охорони праці в Полтаві. Сертифіковані курси, очне та онлайн навчання. Ліцензія Міносвіти. Вартість навчання та розклад курсів."
+        keywords="навчання охорона праці Полтава, курси охорони праці, НПАОП, сертифікат охорони праці, онлайн навчання охорона праці"
+        canonical="/occupational-health"
+      />
       <article className="page-content">
         <h1 className="header">Навчання з питань охорони праці</h1>
         <a

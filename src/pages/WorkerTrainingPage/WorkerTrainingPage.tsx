@@ -1,5 +1,6 @@
 import { workerTrainingData } from "../../assets/WorkerTrainingData";
 import { publicInfoData } from "../../assets/PublicInfoData";
+import SEO from "../../components/SEO/SEO";
 import "./WorkerTrainingPage.css";
 import { Link } from "react-router-dom";
 
@@ -7,6 +8,13 @@ export default function WorkerTrainingPage() {
   const license = workerTrainingData.license;
   return (
     <main className="WorkerTrainingPage">
+      <SEO
+        title="Навчання за професіями"
+        description="Професійне навчання робітників за професіями в Полтаві: кранівник, електрозварник, оператор котельні, слюсар. Ліцензія Міносвіти АГ № 582693. Курси цільового призначення."
+        keywords="навчання кранівник Полтава, навчання електрозварник, оператор котельні навчання, курси професій, ліцензія Міносвіти"
+        canonical="/worker-training"
+        ogImage="/WorkerTraining_50_1_50.webp"
+      />
       <article className="page-content">
         <h1 className="header">
           Ліцензія Міносвіти{" "}
