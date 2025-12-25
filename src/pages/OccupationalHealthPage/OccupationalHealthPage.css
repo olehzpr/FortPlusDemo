@@ -11,22 +11,24 @@
 }
 
 .cost-button {
-  display: inline-block;
-  padding: 0.875rem 2rem;
-  margin: 1rem auto 2rem;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  padding: 1rem 2rem;
   background: var(--highlight-color);
   color: var(--white);
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
   transition: var(--transition);
   box-shadow: var(--shadow-md);
   text-align: center;
 }
 
 .cost-button:hover {
-  background: rgb(195, 50, 50);
+  background: var(--primary-color);
+  color: var(--white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -116,6 +118,12 @@
 @media (max-width: 768px) {
   .page-content {
     padding: 2rem 1rem;
+  }
+
+  .cost-button {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
   }
 
   .table-header {

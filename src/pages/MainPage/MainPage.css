@@ -198,7 +198,8 @@
 }
 
 .cta-button:hover {
-  background: #d63850;
+  background: var(--white);
+  color: var(--primary-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
