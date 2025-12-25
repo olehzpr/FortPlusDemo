@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fort.poltava.ua/sitemap.xml
