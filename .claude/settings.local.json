@@ -6,7 +6,8 @@
       "Bash(for img in *.png)",
       "Bash(do ffmpeg:*)",
       "Bash(done)",
-      "Bash(textutil:*)"
+      "Bash(textutil:*)",
+      "Bash(ls:*)"
     ]
   }
 }
