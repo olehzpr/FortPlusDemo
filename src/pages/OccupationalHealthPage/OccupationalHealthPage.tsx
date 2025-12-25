@@ -21,6 +21,14 @@ export default function OccupationalHealthPage() {
       <ScrollArrow></ScrollArrow>
       <article className="page-content">
         <h1 className="header">Навчання з питань охорони праці</h1>
+        <a
+          href="/documents/Вартість_навчання НПАОП.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cost-button"
+        >
+          Вартість навчання
+        </a>
         <ul className="responsive-table">
           <li className="table-header">
             <div className="col col-1">Позиція</div>

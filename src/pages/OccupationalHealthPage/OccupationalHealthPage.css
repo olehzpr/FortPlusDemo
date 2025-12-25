@@ -78,3 +78,27 @@
 .empty-link {
   color: red;
 }
+
+.cost-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 15px 0;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cost-button:hover {
+  background-color: rgb(195, 50, 50);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cost-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -4,7 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 12px;
+}
+
+@media (min-width: 768px) {
+  .card-layout-container {
+    padding: 2rem 24px;
+  }
 }
 
 .card-layout {
@@ -13,6 +19,7 @@
   align-items: center;
   flex-direction: column;
   gap: calc(15px + 2vw);
+  width: 100%;
   max-width: 960px;
   height: 100%;
   flex-wrap: wrap;

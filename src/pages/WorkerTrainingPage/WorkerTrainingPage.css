@@ -60,9 +60,22 @@
   }
 }
 
-/* .header{ */
-/*   font-size: 24px;  */
-/*   margin: 30px 0; */
-/*   text-align: center; */
-/*   text-transform: uppercase; */
-/* } */
+.link-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.internal-link,
+.document-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-note {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  margin-top: 4px;
+}

@@ -5,7 +5,8 @@
       "Bash(npm run build:*)",
       "Bash(for img in *.png)",
       "Bash(do ffmpeg:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(textutil:*)"
     ]
   }
 }

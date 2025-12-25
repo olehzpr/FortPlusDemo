@@ -37,6 +37,7 @@ export default function Navbar() {
           className="go-back-link"
           aria-label="Повернутись на головну сторінку"
           title="Повернутись на головну сторінку"
+          style={{ display: "flex", alignItems: "center" }}
         >
           <img className="arrow-icon" src="arrow.webp" alt="Стрілка назад" />
           <span>{goBackLinkText}</span>

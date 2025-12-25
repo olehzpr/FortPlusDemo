@@ -1,10 +1,11 @@
 import { workerTrainingData } from "../../assets/WorkerTrainingData";
+import { publicInfoData } from "../../assets/PublicInfoData";
 import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkerTrainingPage.css";
+import { Link } from "react-router-dom";
 
 export default function WorkerTrainingPage() {
   const license = workerTrainingData.license;
-  const courses = workerTrainingData.courses;
   return (
     <main className="WorkerTrainingPage">
       <article className="page-content">
@@ -31,20 +32,37 @@ export default function WorkerTrainingPage() {
         </ul>
 
         <h2 className="header">
-          Курси цільового призначення для навчання робітників за професіями
+          Інформація про наявність у відкритому доступі на власному вебсайті
+          інформації та документів, передбачених Законом України "Про освіту"
         </h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Номер</div>
-            <div className="col col-2">Найменування навчання</div>
+            <div className="col col-1">№ п/п</div>
+            <div className="col col-2">Назва інформації або документа</div>
           </li>
-          {courses.map((x, i) => (
+          {publicInfoData.map((row, i) => (
             <li key={i} className="table-row">
-              <div className="col col-1" data-label="Номер:">
+              <div className="col col-1" data-label="№ п/п:">
                 {i + 1}
               </div>
-              <div className="col col-2" data-label="Назва:">
-                {x}
+              <div className="col col-2 link-col" data-label="Назва:">
+                {row.linkTo ? (
+                  <Link to={row.linkTo} className="internal-link">
+                    {row.title}
+                  </Link>
+                ) : row.documentPath ? (
+                  <a
+                    href={row.documentPath}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="document-link"
+                  >
+                    {row.title}
+                  </a>
+                ) : (
+                  <span>{row.title}</span>
+                )}
+                {row.note && <div className="info-note">{row.note}</div>}
               </div>
             </li>
           ))}
