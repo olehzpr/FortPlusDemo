@@ -1,104 +1,152 @@
 .OccupationalHealthPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  padding-top: var(--navbar-height);
+  min-height: 100vh;
+  background: var(--light-bg);
 }
 
 .page-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 30px 0;
-  margin-top: 5rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.responsive-table {
-  margin: 15px;
-  font-size: 14px;
-}
-
-.responsive-table li {
-  border-radius: 3px;
-  padding: 25px 30px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  font-size: calc(0.7rem + 0.4vw);
-}
-.responsive-table .table-header {
-  background-color: var(--secondary-color);
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-.responsive-table .table-row {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-}
-.responsive-table .col-1 {
-  flex-basis: 15%;
-}
-.responsive-table .col-2 {
-  flex-basis: 85%;
-}
-@media (max-width: 767px) {
-  .responsive-table .table-header {
-    display: none;
-  }
-  .responsive-table li {
-    display: block;
-  }
-  .responsive-table .col {
-    flex-basis: 100%;
-  }
-  .responsive-table .col:before {
-    color: #6c7a89;
-    padding-right: 10px;
-    content: attr(data-label);
-    text-align: left;
-  }
-}
-
-.header {
-  font-size: calc(0.75rem + 1vw);
-  margin: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.additional-resource-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  white-space: nowrap;
-}
-
-.empty-link {
-  color: red;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 .cost-button {
   display: inline-block;
-  padding: 12px 24px;
-  margin: 15px 0;
-  background-color: var(--primary-color);
-  color: white;
+  padding: 0.875rem 2rem;
+  margin: 1rem auto 2rem;
+  background: var(--highlight-color);
+  color: var(--white);
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow-md);
+  text-align: center;
 }
 
 .cost-button:hover {
-  background-color: rgb(195, 50, 50);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: rgb(195, 50, 50);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
-.cost-button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.responsive-table {
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: 2rem 0;
+}
+
+.table-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+  transition: var(--transition);
+}
+
+.table-row:hover {
+  background: var(--gray-100);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.col {
+  display: flex;
+  align-items: flex-start;
+}
+
+.col-1 {
+  font-weight: 600;
+  color: var(--primary-color);
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+}
+
+.col-2 {
+  color: var(--text-primary);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.link-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.additional-resource-link {
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.additional-resource-link:hover {
+  color: var(--highlight-color);
+}
+
+.empty-link {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 2rem 1rem;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .col {
+    align-items: flex-start;
+  }
+
+  .col::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .col-1 {
+    justify-content: flex-start;
+    font-size: 1.5rem;
+  }
+
+  .col-1::before {
+    display: none;
+  }
 }

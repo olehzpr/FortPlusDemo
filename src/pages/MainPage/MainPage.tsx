@@ -1,55 +1,84 @@
-import Card from "../../components/Card/Card";
+import { Link } from "react-router-dom";
 import "./MainPage.css";
 
 export default function MainPage() {
+  const services = [
+    {
+      title: "Навчання з охорони праці",
+      description:
+        "Сертифіковані курси з питань охорони праці. Очне та онлайн навчання",
+      link: "/occupational-health",
+      icon: "🛡️",
+    },
+    {
+      title: "Навчання за професіями",
+      description:
+        "Професійне навчання за ліцензією Міносвіти. Кранівник, зварник, оператор котельні",
+      link: "/worker-training",
+      icon: "🎓",
+    },
+    {
+      title: "Газова майстерня",
+      description:
+        "Встановлення та обслуговування ГБО. Випробування газового обладнання",
+      link: "/workshop",
+      icon: "⚙️",
+    },
+    {
+      title: "Діагностика автомобілів",
+      description:
+        "Професійна діагностика та сертифікація транспортних засобів",
+      link: "/car-diagnostics",
+      icon: "🚗",
+    },
+  ];
+
   return (
-    <main>
-      <h1
-        style={{
-          position: "absolute",
-          left: "-10000px",
-          top: "auto",
-          width: "1px",
-          height: "1px",
-          overflow: "hidden",
-        }}
-      >
+    <main className="main-page">
+      <h1 className="visually-hidden">
         ТОВ Форт Плюс - Навчання з охорони праці та професіям, газова майстерня,
         діагностика автомобілів у Полтаві
       </h1>
+
+      <section className="hero-section">
+        <div className="hero-content">
+          <h2 className="hero-title">
+            Професійне навчання та автосервіс у Полтаві
+          </h2>
+          <p className="hero-subtitle">
+            Сертифіковане навчання з охорони праці та професіям, газова
+            майстерня, діагностика автомобілів
+          </p>
+        </div>
+      </section>
+
       <section
-        className="card-layout-container"
+        className="services-section"
         aria-label="Послуги та напрями навчання"
       >
-        <div className="card-layout">
-          <Card
-            text="НАВЧАННЯ З ПИТАНЬ ОХОРОНИ ПРАЦІ"
-            link="/occupational-health"
-            img="./OccupationalHealth_50.webp"
-            alt="Навчання з питань охорони праці - сертифіковані курси в Полтаві"
-            description="Докладніше / онлайн навчання"
-          />
-          <Card
-            text="НАВЧАННЯ ЗА ПРОФЕСІЯМИ"
-            link="/worker-training"
-            img="./WorkerTraining_50_1_50.webp"
-            alt="Навчання за професіями - кранівник, електрозварник, оператор котельні в Полтаві"
-            description="Докладніше / онлайн навчання"
-          />
-          <Card
-            text="ГАЗОВА МАЙСТЕРНЯ"
-            link="/workshop"
-            img="./Workshop_2_50.webp"
-            alt="Газова майстерня - встановлення та обслуговування ГБО в Полтаві"
-            description="Послуги"
-          />
-          <Card
-            text="ДІАГНОСТИКА АВТОМОБІЛІВ"
-            link="/car-diagnostics"
-            img="./CarDiagnostics_1_1920x1280.webp"
-            alt="Діагностика автомобілів - професійна діагностика та сертифікація авто в Полтаві"
-            description="Послуги"
-          />
+        <h2 className="section-title">Наші послуги</h2>
+        <div className="services-grid">
+          {services.map((service) => (
+            <Link key={service.link} to={service.link} className="service-card">
+              <div className="service-icon">{service.icon}</div>
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <span className="service-arrow">→</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="cta-section">
+        <div className="cta-content">
+          <h2 className="cta-title">Готові розпочати навчання?</h2>
+          <p className="cta-text">
+            Зв'яжіться з нами для отримання детальної інформації про курси та
+            послуги
+          </p>
+          <a href="#footer" className="cta-button">
+            Контакти
+          </a>
         </div>
       </section>
     </main>

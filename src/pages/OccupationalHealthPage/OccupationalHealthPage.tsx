@@ -1,5 +1,4 @@
 import { occupationalHealthData } from "../../assets/OccupationalHealthData";
-import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./OccupationalHealthPage.css";
 
 export default function OccupationalHealthPage() {
@@ -18,7 +17,6 @@ export default function OccupationalHealthPage() {
 
   return (
     <main className="OccupationalHealthPage">
-      <ScrollArrow></ScrollArrow>
       <article className="page-content">
         <h1 className="header">Навчання з питань охорони праці</h1>
         <a
@@ -31,8 +29,8 @@ export default function OccupationalHealthPage() {
         </a>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування навчання</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування навчання</div>
           </li>
           {rows.map((x, i) => (
             <li key={i} className="table-row">
@@ -60,7 +58,7 @@ export default function OccupationalHealthPage() {
                     </a>
                   ) : (
                     substr
-                  ),
+                  )
                 )}
               </div>
             </li>

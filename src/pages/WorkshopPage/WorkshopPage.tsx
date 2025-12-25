@@ -1,5 +1,4 @@
 import { workshopData } from "../../assets/WorkshopData";
-import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkshopPage.css";
 
 export default function WorkshopPage() {
@@ -9,15 +8,14 @@ export default function WorkshopPage() {
   const repair = workshopData.repair;
   return (
     <main className="WorkshopPage">
-      <ScrollArrow></ScrollArrow>
       <article className="page-content">
         <h1 className="header">
           Встановлення газобалонного обладнання на автомобілі
         </h1>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування послуги</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування послуги</div>
           </li>
           {equipment.map((x, i) => (
             <li key={i} className="table-row">
@@ -35,8 +33,8 @@ export default function WorkshopPage() {
         </h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування послуги</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування послуги</div>
           </li>
           {service.map((x, i) => (
             <li key={i} className="table-row">
@@ -54,8 +52,8 @@ export default function WorkshopPage() {
         </h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування послуги</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування послуги</div>
           </li>
           {testing.map((x, i) => (
             <li key={i} className="table-row">
@@ -71,8 +69,8 @@ export default function WorkshopPage() {
         <h2 className="header">ТО та Ремонт автомобілів</h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування послуги</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування послуги</div>
           </li>
           {repair.map((x, i) => (
             <li key={i} className="table-row">

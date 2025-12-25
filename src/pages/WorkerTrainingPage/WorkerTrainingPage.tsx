@@ -1,6 +1,5 @@
 import { workerTrainingData } from "../../assets/WorkerTrainingData";
 import { publicInfoData } from "../../assets/PublicInfoData";
-import ScrollArrow from "../../components/ScrollArrow/ScrollArrow";
 import "./WorkerTrainingPage.css";
 import { Link } from "react-router-dom";
 
@@ -9,15 +8,14 @@ export default function WorkerTrainingPage() {
   return (
     <main className="WorkerTrainingPage">
       <article className="page-content">
-        <ScrollArrow></ScrollArrow>
         <h1 className="header">
           Ліцензія Міносвіти{" "}
           <span style={{ whiteSpace: "nowrap" }}>АГ № 582693</span>
         </h1>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">Позиція</div>
-            <div className="col col-2">Найменування навчання</div>
+            <div className="col col-1 header-text">Позиція</div>
+            <div className="col col-2 header-text">Найменування навчання</div>
           </li>
           {license.map((x, i) => (
             <li key={i} className="table-row">
@@ -37,8 +35,10 @@ export default function WorkerTrainingPage() {
         </h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div className="col col-1">№ п/п</div>
-            <div className="col col-2">Назва інформації або документа</div>
+            <div className="col col-1 header-text">№ п/п</div>
+            <div className="col col-2 header-text">
+              Назва інформації або документа
+            </div>
           </li>
           {publicInfoData.map((row, i) => (
             <li key={i} className="table-row">
